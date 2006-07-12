@@ -1,4 +1,3 @@
-######		Unknown group!
 Summary:	ManDVD - DVD video creator
 Summary(de):	ManDVD - DVD Video Kreator
 Summary(pl):	ManDVD - kreator DVD video
@@ -6,25 +5,25 @@ Name:		mandvd
 Version:	2.0.5
 Release:	1
 License:	GPL
-Group:		X11/Application
+Group:		X11/Applications
 Source0:	http://csgib36.ifrance.com/FTP/%{name}-%{version}src.tar.gz
 # Source0-md5:	f2d835361e241df348d6eb337bc8bf9b
 Source1:	%{name}.desktop
 URL:		http://www.kde-apps.org/content/show.php?content=38347
 BuildRequires:	qt-devel >= 6:3.3
 BuildRequires:	rpmbuild(macros) >= 1.129
-Requires:	dvd-slideshow
-Requires:	mencoder >= 3:1.0
-Requires:	mplayer >= 3:1.0
-Requires:	cdrtools-mkisofs >= 5:2.01
-Requires:	xine-lib > 2:0.99.4
-Requires:	lame >= 3.97
-Requires:	dvdauthor >= 0.6.11
-Requires:	mjpegtools >= 1.8.0
-Requires:	netpbm >= 10.29
 Requires:	ImageMagick >= 1:6.2.4
-Requires:	transcode >= 1.0.2
+Requires:	cdrtools-mkisofs >= 5:2.01
 Requires:	dvd+rw-tools >= 5.21.4
+Requires:	dvd-slideshow
+Requires:	dvdauthor >= 0.6.11
+Requires:	lame >= 3.97
+Requires:	mencoder >= 3:1.0
+Requires:	mjpegtools >= 1.8.0
+Requires:	mplayer >= 3:1.0
+Requires:	netpbm >= 10.29
+Requires:	transcode >= 1.0.2
+Requires:	xine-lib > 2:0.99.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
