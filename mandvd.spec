@@ -2,7 +2,7 @@ Summary:	ManDVD
 Summary(pl):	ManDVD
 Name:		mandvd
 Version:	2.0.5
-Release:	0.2
+Release:	0.3
 License:	GPL
 Group:		X11/Application
 Source0:	http://csgib36.ifrance.com/FTP/%{name}-%{version}src.tar.gz
@@ -27,9 +27,9 @@ qmake
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/apps/%{name},%{_desktopdir}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_iconsdir}/hicolor/128x128/apps,%{_desktopdir}}
 install mandvd $RPM_BUILD_ROOT%{_bindir}/mandvd
-install mandvdico.png $RPM_BUILD_ROOT%{_datadir}/apps/%{name}/mandvdico.png
+install mandvdico.png $RPM_BUILD_ROOT%{_iconsdir}/hicolor/128x128/apps/mandvdico.png
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
@@ -38,5 +38,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/mandvd
-%{_datadir}/apps/%{name}/mandvdico.png
+%{_iconsdir}/hicolor/*/apps/mandvdico.png
 %{_desktopdir}/%{name}.desktop
