@@ -1,8 +1,10 @@
-Summary:	ManDVD
-Summary(pl):	ManDVD
+######		Unknown group!
+Summary:	ManDVD - DVD video creator
+Summary(de):	ManDVD - DVD Video Kreator
+Summary(pl):	ManDVD - kreator DVD video
 Name:		mandvd
 Version:	2.0.5
-Release:	0.3
+Release:	1
 License:	GPL
 Group:		X11/Application
 Source0:	http://csgib36.ifrance.com/FTP/%{name}-%{version}src.tar.gz
@@ -11,12 +13,29 @@ Source1:	%{name}.desktop
 URL:		http://www.kde-apps.org/content/show.php?content=38347
 BuildRequires:	qt-devel >= 6:3.3
 BuildRequires:	rpmbuild(macros) >= 1.129
+Requires:	dvd-slideshow
+Requires:	mencoder >= 3:1.0
+Requires:	mplayer >= 3:1.0
+Requires:	cdrtools-mkisofs >= 5:2.01
+Requires:	xine-lib > 2:0.99.4
+Requires:	lame >= 3.97
+Requires:	dvdauthor >= 0.6.11
+Requires:	mjpegtools >= 1.8.0
+Requires:	netpbm >= 10.29
+Requires:	ImageMagick >= 1:6.2.4
+Requires:	transcode >= 1.0.2
+Requires:	dvd+rw-tools >= 5.21.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+This is a program to simply create DVD Video.
+
+%description -l de
+Dies ist ein Programm zum einfachen erstellen von DVD Videos.
 
 %description -l pl
- 
+To program do ³atwego tworzenia DVD video.
+
 %prep
 %setup -q -n ManDVD-%{version}
 
@@ -27,9 +46,9 @@ qmake
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_iconsdir}/hicolor/128x128/apps,%{_desktopdir}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_desktopdir}}
 install mandvd $RPM_BUILD_ROOT%{_bindir}/mandvd
-install mandvdico.png $RPM_BUILD_ROOT%{_iconsdir}/hicolor/128x128/apps/mandvdico.png
+install mandvdico.png $RPM_BUILD_ROOT%{_pixmapsdir}/mandvdico.png
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
@@ -38,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/mandvd
-%{_iconsdir}/hicolor/*/apps/mandvdico.png
+%{_pixmapsdir}/mandvdico.png
 %{_desktopdir}/%{name}.desktop
