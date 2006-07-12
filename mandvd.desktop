@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ManDVD
+Comment=DVD Video creator
+Comment[de]=DVD Video Kreator
+Comment[pl]=Kreator DVD Video
+Exec=mandvd
+Icon=mandvdico.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Encoding=UTF-8
+Categories=Qt;KDE;Audio;
