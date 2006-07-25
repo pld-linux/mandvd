@@ -10,6 +10,7 @@ Source0:	http://csgib36.ifrance.com/FTP/%{name}-%{version}src.tar.gz
 # Source0-md5:	7fe1b87f68be8a854a70aa4a259a4c9f
 Source1:	%{name}.desktop
 URL:		http://www.kde-apps.org/content/show.php?content=38347
+BuildRequires:	qmake >= 6:3.3
 BuildRequires:	qt-devel >= 6:3.3
 BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	ImageMagick >= 1:6.2.4
