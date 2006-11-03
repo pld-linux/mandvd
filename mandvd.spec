@@ -2,12 +2,12 @@ Summary:	ManDVD - DVD video creator
 Summary(de):	ManDVD - DVD Video Kreator
 Summary(pl):	ManDVD - kreator DVD video
 Name:		mandvd
-Version:	2.2
+Version:	2.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://csgib36.ifrance.com/FTP/%{name}-%{version}src.tar.gz
-# Source0-md5:	12b4c744d99ad8017c8cb49f155d6a7f
+# Source0-md5:	e72ed2b933c6f377b2b43a139dcb6402
 Source1:	%{name}.desktop
 URL:		http://www.kde-apps.org/content/show.php?content=38347
 BuildRequires:	qmake >= 6:3.3
@@ -37,7 +37,7 @@ Dies ist ein Programm zum einfachen erstellen von DVD Videos.
 To program do ³atwego tworzenia DVD video.
 
 %prep
-%setup -q -n ManDVD-%{version}
+%setup -q -n ManDVD-%{version}src
 
 %build
 export QTDIR=%{_prefix}
