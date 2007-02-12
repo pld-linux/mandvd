@@ -1,6 +1,6 @@
 Summary:	ManDVD - DVD video creator
-Summary(de.UTF-8):   ManDVD - DVD Video Kreator
-Summary(pl.UTF-8):   ManDVD - kreator DVD video
+Summary(de.UTF-8):	ManDVD - DVD Video Kreator
+Summary(pl.UTF-8):	ManDVD - kreator DVD video
 Name:		mandvd
 Version:	2.4
 Release:	1
