@@ -1,6 +1,6 @@
 Summary:	ManDVD - DVD video creator
-Summary(de):	ManDVD - DVD Video Kreator
-Summary(pl):	ManDVD - kreator DVD video
+Summary(de.UTF-8):   ManDVD - DVD Video Kreator
+Summary(pl.UTF-8):   ManDVD - kreator DVD video
 Name:		mandvd
 Version:	2.4
 Release:	1
@@ -30,11 +30,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is a program to simply create DVD Video.
 
-%description -l de
+%description -l de.UTF-8
 Dies ist ein Programm zum einfachen erstellen von DVD Videos.
 
-%description -l pl
-To program do ³atwego tworzenia DVD video.
+%description -l pl.UTF-8
+To program do Å‚atwego tworzenia DVD video.
 
 %prep
 %setup -q -n ManDVD-%{version}src
